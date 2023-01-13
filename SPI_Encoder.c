@@ -616,8 +616,8 @@ int main(int argc, char *argv[])
 {
 	int fd;							// SPI-handler
 	uint32_t request = 4;			// requestmode of SPI
-	int8_t counter = 10;			// counts number of measurements
-	uint8_t numberOfEncoders = 6;	// 1-6 Encoders
+	int8_t counter = 10;			// counts number of measurements (while(1) loop can be enabled for contineous measurement)
+	uint8_t numberOfEncoders = 6;	// number of encoders which will be read after another (1-6 Encoders)
 	// initialize SPI
 	fd = initSPI(request, argc, argv);
 	
